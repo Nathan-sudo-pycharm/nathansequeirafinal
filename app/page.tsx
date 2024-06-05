@@ -6,7 +6,7 @@ import { navItems } from "@/data";
 import { FaHome } from "react-icons/fa";
 import SkillsTab from "@/components/SkillsTab";
 import TechStack from "@/components/TechStack";
-//import { Certifications } from "@/components/Certifications";
+import { Certifications } from "@/components/Certifications";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
         <RecentProject />
         <TechStack />
         <SkillsTab />
-        {/*  <Certifications /> */}
+        <Certifications />
         <Footer />
       </div>
     </main>

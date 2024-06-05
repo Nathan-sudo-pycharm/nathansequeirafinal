@@ -5,7 +5,7 @@ export const navItems = [
   { name: "Projects", link: "#projects" },
   { name: "Technologies", link: "#techstack" },
   { name: "Skills", link: "#skills" },
-
+  { name: "Certifications", link: "#certifications" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -96,7 +96,7 @@ export const projects = [
     id: 3,
     title: "Multi-Language Invoice Analyzer",
     des: "Gemini Pro: Efficient multi-language invoice analyzer for international financial documents.",
-    img: "/p3.svg",
+    img: "/invoicegen.png",
     iconLists: ["/python.svg", "google.svg"],
     link: "https://github.com/Nathan-sudo-pycharm/Multilang_Invoice_Analyzer",
     time: "Build Time:3 Weeks",
