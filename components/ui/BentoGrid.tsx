@@ -8,12 +8,7 @@ import GlobeDemo from "./GridGlobe";
 import Lottie from "react-lottie";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
-import {
-  IoCodeDownloadSharp,
-  IoCopyOutline,
-  IoDownloadOutline,
-  IoDownloadSharp,
-} from "react-icons/io5";
+import { IoDownloadOutline } from "react-icons/io5";
 export const BentoGrid = ({
   className,
   children,
@@ -62,7 +57,7 @@ export const BentoGridItem = ({
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
+    link.href = "/NathanSequeiraResume.pdf";
     link.download = "resume.pdf";
     document.body.appendChild(link);
     link.click();
