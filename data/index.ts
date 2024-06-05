@@ -5,7 +5,7 @@ export const navItems = [
   { name: "Projects", link: "#projects" },
   { name: "Technologies", link: "#techstack" },
   { name: "Skills", link: "#skills" },
-  { name: "Certifications", link: "#certifications" },
+
   { name: "Contact", link: "#contact" },
 ];
 
