@@ -22,7 +22,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "I can adapt to various situations.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -160,7 +160,7 @@ export const Skills = [
   {
     id: 4,
     title: "Languages Spoken",
-    desc: "English , Hindi, Kannada , German [ Basic ] ",
+    desc: "English , Hindi , Kannada , Tulu , Konkani  ",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
