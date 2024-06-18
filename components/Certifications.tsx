@@ -39,7 +39,7 @@ export function Certifications() {
               Other Certificates Gained or Awarded in College:
             </h2>
             <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-              Certificate oF Appreciation , Certificate of Excellence ,
+              Certificate of Appreciation , Certificate of Excellence ,
               Certificate of Participation.
             </p>
           </WobbleCard>

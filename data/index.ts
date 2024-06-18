@@ -22,7 +22,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I can adapt to various situations.",
+    title: "Versatile,adaptable,flexible in diverse environments.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -63,7 +63,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "You can download my resume here.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -115,8 +115,8 @@ export const projects = [
 export const companies = [
   {
     id: 1,
-    name: "React JS",
-    img: "/react.svg",
+    name: "PHP",
+    img: "/php.svg",
   },
   {
     id: 2,
@@ -141,28 +141,24 @@ export const Skills = [
     title: "Soft Skills",
     desc: "Leadership, Communication , Public Speaking , Analytical Skills",
     className: "md:col-span-2",
-    thumbnail: "/exp3.svg",
   },
   {
     id: 2,
     title: "Technical Skills ",
     desc: "HTML5 , CSS3 , C , C++ , PYTHON , MySQL , PHP , Reacy JS , Next JS",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
   },
   {
     id: 3,
     title: "Tools and Software",
     desc: "Git , Github , Sentry ",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
   },
   {
     id: 4,
     title: "Languages Spoken",
-    desc: "English , Hindi , Kannada , Tulu , Konkani  ",
+    desc: "English , Hindi , Kannada , Tulu , Konkani , German [ Basic]  ",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
   },
 ];
 
