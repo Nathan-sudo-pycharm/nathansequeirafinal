@@ -57,8 +57,8 @@ export const BentoGridItem = ({
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/NathanSequeiraResume.pdf";
-    link.download = "resume.pdf";
+    link.href = "/NathanSequeira.pdf";
+    link.download = "NathanSequeira.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
