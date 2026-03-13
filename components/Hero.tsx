@@ -56,7 +56,8 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Nathan, a Fresher based in India.
+            Hi! I&apos;m Nathan. Graduate with 1+ year of technical support
+            experience, passionate about AI and software development
           </p>
 
           <a href="#projects">
