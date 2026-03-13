@@ -18,9 +18,9 @@ export default function Home() {
         <Hero />
         <Grid />
         <RecentProject />
-        <TechStack />
-        <SkillsTab />
         <Experience />
+        <SkillsTab />
+        <TechStack />
         <Certifications />
         <Footer />
       </div>

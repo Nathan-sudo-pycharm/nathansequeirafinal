@@ -27,7 +27,7 @@ export function Certifications() {
               </p>
             </div>
             <Image
-              src="/flutter.png"
+              src="/paloaltocloud.png"
               width={500}
               height={500}
               alt="Flutter Image"
