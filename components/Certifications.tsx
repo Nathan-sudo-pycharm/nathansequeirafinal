@@ -17,13 +17,13 @@ export function Certifications() {
           >
             <div className="max-w-xs">
               <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-[#FCCB06]">
-                Flutter & Dart - The Complete Guide [2024 Edition]
+                Cloud Security Fundamentals
               </h2>
-              <p className="mt-4 text-left  text-base/6 text-[#CA2C92]">
-                Course Completed on Udemy{" "}
+              <p className="mt-4 text-left text-base/6 text-[#CA2C92]">
+                Certification Completed
               </p>
-              <p className="mt-4 text-left  text-base/6 text-neutral-200">
-                Instructor : Academind by Maximilian Schwarzmüller{" "}
+              <p className="mt-4 text-left text-base/6 text-neutral-200">
+                Provided by Palo Alto Networks
               </p>
             </div>
             <Image
