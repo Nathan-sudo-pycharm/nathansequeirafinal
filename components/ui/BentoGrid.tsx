@@ -21,7 +21,7 @@ export const BentoGrid = ({
       className={cn(
         // change gap-4 to gap-8, change grid-cols-3 to grid-cols-5, remove md:auto-rows-[18rem], add responsive code
         "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
-        className
+        className,
       )}
     >
       {children}
@@ -49,7 +49,7 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Python", "MySQL"];
+  const leftLists = ["React JS", "Python", "MySQL"];
   const rightLists = ["C", "Embedded C", "JavaScript"];
   const [copied, setCopied] = useState(false);
 
@@ -57,8 +57,8 @@ export const BentoGridItem = ({
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/NathanSequeira.pdf";
-    link.download = "NathanSequeira.pdf";
+    link.href = "/Nathan_Ivor_Sequeira_CV.pdf";
+    link.download = "Nathan_Ivor_Sequeira_CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -70,7 +70,7 @@ export const BentoGridItem = ({
       className={cn(
         // remove p-4 rounded-3xl dark:bg-black dark:border-white/[0.2] bg-white  border border-transparent, add border border-white/[0.1] overflow-hidden relative
         "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4  ",
-        className
+        className,
       )}
       style={{
         //   add these two
@@ -112,7 +112,7 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10",
           )}
         >
           <div className="font-sans font-extralight  text-[#C1C2D3] md:text-sm lg:text-base z-10">

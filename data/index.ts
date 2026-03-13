@@ -42,7 +42,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "AI and backend systems developer",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -53,7 +53,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently a fresher eager to gain some experience",
+    title: "1+ year in industry. Applying for a Master's in Germany.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -79,16 +79,16 @@ export const projects = [
     title: "Autonomous Navigating Car",
     des: "Developed an autonomous navigating car using Embedded C, featuring obstacle detection and obstacle avoidance",
     img: "/roborover.jpg",
-    iconLists: ["/ebc.svg", "/arduino.svg"],
+    // iconLists: ["/ebc.svg", "/arduino.svg"],
     link: "https://github.com/Nathan-sudo-pycharm/Arduino_code/blob/main/finalobstacle.ino",
     time: "Build Time: 4 Months",
   },
   {
     id: 2,
     title: "Large Language Powered PDF Reader",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    des: "RAG app for natural language querying across multiple PDFs using LangChain, Pinecone, and OpenAI.",
     img: "/pdfreader.jpg",
-    iconLists: ["/python.svg", "/openai.svg"],
+    // iconLists: ["/python.svg", "/openai.svg"],
     link: "https://github.com/Nathan-sudo-pycharm/Pdf_reader",
     time: "Build Time: 1 week",
   },
@@ -97,18 +97,18 @@ export const projects = [
     title: "Multi-Language Invoice Analyzer",
     des: "Gemini Pro: Efficient multi-language invoice analyzer for international financial documents.",
     img: "/invoicegen.png",
-    iconLists: ["/python.svg", "google.svg"],
+    //  iconLists: ["/python.svg", "google.svg"],
     link: "https://github.com/Nathan-sudo-pycharm/Multilang_Invoice_Analyzer",
     time: "Build Time:3 Weeks",
   },
   {
     id: 4,
-    title: "Street Fighter Clone Made in Python",
-    des: "This project is a Clone of the Street Fighter Game. It has been developed in Python programming language, using the Pygame library.",
-    img: "/multiplayer.png",
-    iconLists: ["/python.svg"],
-    link: "/multiplayer.png",
-    time: "Build Time:1 Week",
+    title: "Multi-Chain Fast Food Nutrition Analysis System",
+    des: "A full-stack responsive web app that aggregates real-time nutritional data across multiple restaurant chains, built with a mobile-first design approach and JSON-driven API simulation.",
+    img: "/multichainfood.png",
+    // iconLists: ["/tailwind.svg, vercel.svg"],
+    link: "https://github.com/Nathan-sudo-pycharm/Multi-Chain-Fast-Food-Nutrition-Analysis",
+    time: "Build Time:2.5 Weeks",
   },
 ];
 
@@ -145,13 +145,13 @@ export const Skills = [
   {
     id: 2,
     title: "Technical Skills ",
-    desc: "HTML5 , CSS3 , C , C++ , PYTHON , MySQL , PHP , Reacy JS , Next JS",
+    desc: "HTML5 , CSS3 , C , C++ , PYTHON , MySQL , PHP , React JS , Next JS",
     className: "md:col-span-2", // change to md:col-span-2
   },
   {
     id: 3,
     title: "Tools and Software",
-    desc: "Git , Github , Sentry ",
+    desc: "Git , Github , Grafana ",
     className: "md:col-span-2", // change to md:col-span-2
   },
   {

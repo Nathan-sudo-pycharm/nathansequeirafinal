@@ -8,6 +8,7 @@ import SkillsTab from "@/components/SkillsTab";
 import TechStack from "@/components/TechStack";
 import { Certifications } from "@/components/Certifications";
 import Footer from "@/components/Footer";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <RecentProject />
         <TechStack />
         <SkillsTab />
+        <Experience />
         <Certifications />
         <Footer />
       </div>

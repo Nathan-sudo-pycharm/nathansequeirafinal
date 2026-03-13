@@ -46,7 +46,7 @@ export function Certifications() {
           <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-black-100 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
             <div className="max-w-sm">
               <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-green-500">
-                Honeywell CyberSecurity Trainng
+                Honeywell CyberSecurity Training
               </h2>
               <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
                 Learnings: Gained proficiency in operating a firewall, and
