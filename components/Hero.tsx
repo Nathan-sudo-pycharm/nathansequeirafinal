@@ -51,15 +51,11 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Progress is doing something that is bigger than Yourself"
+            words=" Hi! I'm Nathan. A Backend & observability engineer. BCA
+            graduate with 1+ year in infrastructure operations. Building towards
+            distributed systems and AI engineering at the master's level"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
-
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Nathan. Graduate with 1+ year of technical support
-            experience, passionate about AI and software development
-          </p>
-
           <a href="#projects">
             <MagicButton
               title="My work"

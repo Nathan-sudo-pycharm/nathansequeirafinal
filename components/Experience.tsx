@@ -6,7 +6,7 @@ const experiences = [
     location: "Mangaluru, India",
     bullets: [
       "Handled 40–80 VPN support tickets per shift, resolving connectivity issues and monitoring server load using Zendesk and Okta.",
-      "Designated QA tester for the team; commended by management as a highly motivated self-starter with strong technical knowledge.",
+      "Identified recurring failure patterns across VPN connectivity tickets, developing informal anomaly classification heuristics — later formalised in the SecureIntel DNS Guardian ML pipeline.",
     ],
     tags: ["VPN", "Zendesk", "Okta", "QA Testing"],
   },
@@ -17,7 +17,7 @@ const experiences = [
     location: "Mangaluru, India",
     bullets: [
       "Resolved 60+ technical support tickets per shift covering hosting, email, DNS, and website security across shared and VPS environments.",
-      "Performed security fixes, patch applications, and email delivery troubleshooting via cPanel, WHM, and Linux-based tools.",
+      "Operated Grafana dashboards for real-time VPS performance monitoring — directly informing the observability engineering work in subsequent personal projects.",
     ],
     tags: ["cPanel", "WHM", "DNS", "Linux", "Grafana"],
   },

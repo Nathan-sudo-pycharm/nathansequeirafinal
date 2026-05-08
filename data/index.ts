@@ -76,7 +76,7 @@ export const gridItems = [
 
 export const projects = [
   {
-    id: 1,
+    id: 2,
     title: "Autonomous Navigating Car",
     des: "Developed an autonomous navigating car using Embedded C, featuring obstacle detection and obstacle avoidance",
     img: "/roborover.jpg",
@@ -85,22 +85,22 @@ export const projects = [
     time: "Build Time: 4 Months",
   },
   {
-    id: 2,
-    title: "Large Language Powered PDF Reader",
-    des: "RAG app for natural language querying across multiple PDFs using LangChain, Pinecone, and OpenAI.",
-    img: "/pdfreader.jpg",
-    iconLists: ["/python.svg", "/openai.svg"],
-    link: "https://github.com/Nathan-sudo-pycharm/Pdf_reader",
-    time: "Build Time: 1 week",
+    id: 1,
+    title: "SecureIntel DNS Guardian",
+    des: "Built on a 162-record sample dataset; designed for architectural demonstration and pipeline design rather than production-scale detection.",
+    img: "/secureintel.png",
+    iconLists: ["/python.svg", "nvidia-svgrepo-com.svg"],
+    link: "https://github.com/Nathan-sudo-pycharm/secureintel-dns-guardian",
+    time: "Build Time: 2 weeks",
   },
   {
     id: 3,
-    title: "Multi-Language Invoice Analyzer",
-    des: "Gemini Pro: Efficient multi-language invoice analyzer for international financial documents.",
-    img: "/invoicegen.png",
-    iconLists: ["/python.svg", "google.svg"],
-    link: "https://github.com/Nathan-sudo-pycharm/Multilang_Invoice_Analyzer",
-    time: "Build Time:3 Weeks",
+    title: "DevTracker API — REST API Foundations",
+    des: "A production-structured REST API demonstrating backend engineering fundamentals.",
+    img: "/devtracker.png",
+    iconLists: ["/python.svg"],
+    link: "https://github.com/Nathan-sudo-pycharm/devtracker-",
+    time: "Build Time:1 Week",
   },
   {
     id: 4,
@@ -139,26 +139,44 @@ export const companies = [
 export const Skills = [
   {
     id: 1,
-    title: "Soft Skills",
-    desc: "Leadership, Communication , Public Speaking , Analytical Skills",
+    title: "Backend Engineering",
+    desc: "FastAPI (Python), PostgreSQL , JWT Authentication",
     className: "md:col-span-2",
   },
   {
     id: 2,
-    title: "Technical Skills ",
-    desc: "HTML5 , CSS3 , C , C++ , PYTHON , MySQL , PHP , React JS , Next JS",
+    title: "Languages",
+    desc: "Python, JavaScript, SQL, Java, C/C++ (academic), PHP (academic)",
     className: "md:col-span-2", // change to md:col-span-2
   },
   {
     id: 3,
-    title: "Tools and Software",
-    desc: "Git , Github , Grafana ",
+    title: "Systems & Infrastructure",
+    desc: "Docker, Docker Compose, Linux, DNS Configuration, cPanel, WHM, VPS Administration",
     className: "md:col-span-2", // change to md:col-span-2
   },
   {
     id: 4,
     title: "Languages Spoken",
-    desc: "English , Hindi , Kannada , Tulu , Konkani , German [ Basic]  ",
+    desc: "English (fluent), German (Goethe -A1), Hindi",
+    className: "md:col-span-2", // change to md:col-span-2
+  },
+  {
+    id: 5,
+    title: "Observability & Monitoring",
+    desc: "Prometheus, Grafana, Structured Logging",
+    className: "md:col-span-2", // change to md:col-span-2
+  },
+  {
+    id: 6,
+    title: "Machine Learning & AI",
+    desc: "scikit-learn (Isolation Forest), Sentence Transformers, LangChain, NVIDIA NIM API, OpenAI API, Google Gemini API, RAG Pipelines",
+    className: "md:col-span-2", // change to md:col-span-2
+  },
+  {
+    id: 7,
+    title: "DevOps & Tooling",
+    desc: "GitHub Actions (CI/CD), Git, pytest, Zendesk, Okta",
     className: "md:col-span-2", // change to md:col-span-2
   },
 ];
