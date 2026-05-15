@@ -80,7 +80,7 @@ export const projects = [
     title: "Autonomous Navigating Car",
     des: "Developed an autonomous navigating car using Embedded C, featuring obstacle detection and obstacle avoidance",
     img: "/roborover.jpg",
-    iconLists: ["/ebc.svg", "/arduino.svg"],
+    iconLists: ["/arduino.svg"],
     link: "https://github.com/Nathan-sudo-pycharm/Arduino_code/blob/main/finalobstacle.ino",
     time: "Build Time: 4 Months",
   },
