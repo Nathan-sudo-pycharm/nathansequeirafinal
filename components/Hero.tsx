@@ -51,9 +51,8 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words=" Hi! I'm Nathan. A Backend & observability engineer. BCA
-            graduate with 1+ year in infrastructure operations. Building towards
-            distributed systems and AI engineering at the master's level"
+            words=" Hi! I'm Nathan. A BCA graduate with 1+ year in infrastructure operations. Building towards
+            distributed systems and AI engineering at the master's level."
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
           <a href="#projects">

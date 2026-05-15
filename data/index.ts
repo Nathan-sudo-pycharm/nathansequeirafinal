@@ -89,18 +89,18 @@ export const projects = [
     title: "SecureIntel DNS Guardian",
     des: "Built on a 162-record sample dataset; designed for architectural demonstration and pipeline design rather than production-scale detection.",
     img: "/secureintel.png",
-    iconLists: ["/python.svg", "nvidia-svgrepo-com.svg"],
+    iconLists: ["/python.svg", "nvidia-svgrepo-com.svg", "dock.svg"],
     link: "https://github.com/Nathan-sudo-pycharm/secureintel-dns-guardian",
     time: "Build Time: 2 weeks",
   },
   {
     id: 3,
-    title: "DevTracker API — REST API Foundations",
-    des: "A production-structured REST API demonstrating backend engineering fundamentals.",
-    img: "/devtracker.png",
-    iconLists: ["/python.svg"],
-    link: "https://github.com/Nathan-sudo-pycharm/devtracker-",
-    time: "Build Time:1 Week",
+    title: "CodeReviewBot",
+    des: "An AI-powered GitHub bot that automatically reviews Pull Requests and posts structured code feedback using webhooks.",
+    img: "/codereviewbot.png",
+    iconLists: ["/python.svg", "mistral-color.svg", "dock.svg"],
+    link: "https://github.com/Nathan-sudo-pycharm/codereviewbot/tree/main",
+    time: "Build Time: Approx 1 Week",
   },
   {
     id: 4,
@@ -133,6 +133,11 @@ export const companies = [
     id: 4,
     name: "Next JS",
     img: "/next.svg",
+  },
+  {
+    id: 5,
+    name: "Docker",
+    img: "/dock.svg",
   },
 ];
 
