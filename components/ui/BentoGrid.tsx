@@ -57,8 +57,8 @@ export const BentoGridItem = ({
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Nathan_Ivor_Sequeira_CV.pdf";
-    link.download = "Nathan_Ivor_Sequeira_CV.pdf";
+    link.href = "/Nathan_Sequeira_CV_2026.pdf";
+    link.download = "Nathan_Sequeira_CV_2026.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
