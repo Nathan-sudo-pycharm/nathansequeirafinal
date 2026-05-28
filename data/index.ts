@@ -76,6 +76,21 @@ export const gridItems = [
 
 export const projects = [
   {
+    id: 4,
+    title: "Hermes",
+    des: "A self-hosted distributed workflow orchestration platform — featuring automatic retry, circuit breaking, and much more",
+    img: "/Hermes.png",
+    iconLists: [
+      "/python.svg",
+      "kafka.svg",
+      "dock.svg",
+      "tailwind.svg",
+      "icons8-next.js.svg",
+    ],
+    link: "https://github.com/Nathan-sudo-pycharm/hermes",
+    time: "Build Time: approx 15 days",
+  },
+  {
     id: 2,
     title: "Autonomous Navigating Car",
     des: "Developed an autonomous navigating car using Embedded C, featuring obstacle detection and obstacle avoidance",
@@ -101,15 +116,6 @@ export const projects = [
     iconLists: ["/python.svg", "mistral-color.svg", "dock.svg"],
     link: "https://github.com/Nathan-sudo-pycharm/codereviewbot/tree/main",
     time: "Build Time: Approx 1 Week",
-  },
-  {
-    id: 4,
-    title: "Multi-Chain Fast Food Nutrition Analysis System",
-    des: "A full-stack responsive web app that aggregates real-time nutritional data across multiple restaurant chains, built with a mobile-first design approach and JSON-driven API simulation.",
-    img: "/multichainfood.png",
-    iconLists: ["tailwind.svg", "icons8-next.js.svg"],
-    link: "https://github.com/Nathan-sudo-pycharm/Multi-Chain-Fast-Food-Nutrition-Analysis",
-    time: "Build Time:2.5 Weeks",
   },
 ];
 
