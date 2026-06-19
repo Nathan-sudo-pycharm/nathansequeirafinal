@@ -2,7 +2,7 @@
 
 Personal portfolio website built with Next.js 14, Three.js, and Tailwind CSS.
 
-Live: [nathansequeirafinal.vercel.app](https://nathansequeirafinal.vercel.app)
+Live: [nathansequeirafinal.vercel.app](https://nathansequeirafinal.vercel.app). <br>
 Read [this document](./public/Content_Guide.md) to customize the contents of the website as per your requirements.
 
 ---
