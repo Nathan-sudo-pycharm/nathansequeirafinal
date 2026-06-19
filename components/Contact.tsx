@@ -17,7 +17,7 @@ export default function Contact({ lang }: Props) {
   }
 
   return (
-    <section id="contact" className="w-full py-40 px-6 md:px-12 max-w-[1400px] mx-auto text-center">
+    <section id="contact" className="w-full py-20 px-6 md:px-12 max-w-[1400px] mx-auto text-center border-t border-[#2A2A2A]">
 
       {/* Big heading */}
       <h2

@@ -16,7 +16,7 @@ export default function Work({ lang }: Props) {
   const heading = lang === 'en' ? 'Things I have built.' : 'Was ich gebaut habe.'
 
   return (
-    <section id="work" className="w-full py-32 px-6 md:px-12 max-w-[1400px] mx-auto">
+    <section id="work" className="w-full py-20 px-6 md:px-12 max-w-[1400px] mx-auto border-t border-[#2A2A2A]">
 
       {/* Section header */}
       <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-20 gap-4">

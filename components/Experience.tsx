@@ -7,7 +7,7 @@ type Props = { lang: Lang }
 
 export default function Experience({ lang }: Props) {
   return (
-    <section id="experience" className="w-full py-32 px-6 md:px-12 max-w-[1400px] mx-auto">
+    <section id="experience" className="w-full py-20 px-6 md:px-12 max-w-[1400px] mx-auto border-t border-[#2A2A2A]">
 
       {/* Eyebrow */}
       <span className="font-mono-jet text-xs tracking-[0.25em] text-[#666666]">
