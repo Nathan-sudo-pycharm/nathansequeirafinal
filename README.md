@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nathan Ivor Sequeira — Portfolio
+
+Personal portfolio website built with Next.js 14, Three.js, and Tailwind CSS.
+
+Live: [nathansequeirafinal.vercel.app](https://nathansequeirafinal.vercel.app)
+Read [this document](./public/Content_Guide.md) to customize the contents of the website as per your requirements.
+
+---
+
+## Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **3D:** Three.js via @react-three/fiber + @react-three/drei
+- **Animations:** Framer Motion
+- **Styling:** Tailwind CSS
+- **Fonts:** Syne, DM Sans, JetBrains Mono (Google Fonts)
+- **Analytics:** Google Analytics 4 + Vercel Analytics
+- **Deployment:** Vercel
+
+---
+
+## Features
+
+- Wireframe Three.js TorusKnot hero with mouse parallax and breathing animation
+- EN / DE language toggle (client-side i18n)
+- Expandable project list with tech tags and GitHub/Live links
+- WIP badge for in-progress projects
+- Copy-to-clipboard email interaction
+- CV PDF download
+- Mobile responsive (375px and up)
+- Text selection styled in accent color (#E8FF47)
+- Scroll-aware navbar with backdrop blur
+
+---
+
+## Project Structure
+
+```
+├── app/
+│   ├── globals.css           # Global styles, CSS variables, font utilities
+│   ├── layout.tsx            # Root layout, font setup, metadata, analytics
+│   ├── page.tsx              # Main page, language state management
+│   └── GoogleAnalytics.tsx   # GA4 script injection
+├── components/
+│   ├── Navbar.tsx            # Fixed navbar, scroll blur, EN/DE switcher
+│   ├── Hero.tsx              # Three.js scene, typewriter, name display
+│   ├── Work.tsx              # Expandable numbered project list
+│   ├── About.tsx             # Bio paragraphs, stack pills
+│   ├── Experience.tsx        # Work history with numbered bullets
+│   ├── Contact.tsx           # Copy email, social icons, CV download
+│   └── Footer.tsx            # Copyright, language switcher
+├── data/
+│   └── index.ts              # ALL site content lives here — edit this file
+└── public/
+    └── cv/
+        └── Nathan_Ivor_Sequeira_CV.pdf
+```
+
+---
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+git clone https://github.com/Nathan-sudo-pycharm/nathansequeirafinal
+cd nathansequeirafinal
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Deployment
 
-## Learn More
+Deployed on Vercel. Every push to `main` triggers an automatic deployment.
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+git add .
+git commit -m "your message"
+git push origin main
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To preview changes before merging to main, work on a branch:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+git checkout -b your-branch-name
+# make changes
+git push origin your-branch-name
+# merge when ready
+git checkout main
+git merge your-branch-name
+git push origin main
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Analytics
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Google Analytics 4** — tracks page views, country breakdown, session duration, scroll depth, bot filtering. View at [analytics.google.com](https://analytics.google.com)
+- **Vercel Analytics** — tracks unique visitors, device type, performance. View in your Vercel dashboard.
+
+---
+
+## License
+
+Personal portfolio — not for reuse or redistribution.
