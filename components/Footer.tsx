@@ -1,58 +1,44 @@
-import { FaLocationArrow } from "react-icons/fa6";
+'use client'
 
-import { socialMedia } from "@/data";
-import MagicButton from "./ui/MagicButton";
+import { footer } from '@/data/index'
+import type { Lang } from '@/data/index'
 
-const Footer = () => {
+type Props = {
+  lang: Lang
+  setLang: (l: Lang) => void
+}
+
+export default function Footer({ lang, setLang }: Props) {
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
-      {/* background grid */}
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
-          src="/footer-grid.svg"
-          alt="grid"
-          className="w-full h-full opacity-50 "
-        />
-      </div>
+    <footer className="w-full border-t border-[#2A2A2A]">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 h-14 flex items-center justify-between">
 
-      <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
-          Reach Out to <span className="text-purple">Me</span>
-        </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          Built by Nathan Ivor Sequeira
-        </p>
-        <a
-          href="mailto:nathansequeiraprofessinal@gmail.com
- "
-        >
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </a>
-      </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Nathan Sequeira
-        </p>
+        {/* Copyright */}
+        <span className="font-mono-jet text-xs text-[#666666]">
+          {footer.copy}
+        </span>
 
-        <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map((info) => (
-            <div
-              key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
-            >
-              <a href={info.link} target="_blank" rel="noopener noreferrer">
-                <img src={info.img} alt={info.img} width={20} height={20} />
-              </a>
-            </div>
-          ))}
+        {/* Language switcher */}
+        <div className="flex items-center gap-3 font-mono-jet text-xs tracking-widest">
+          <button
+            onClick={() => setLang('en')}
+            className={`transition-colors duration-200 ${
+              lang === 'en' ? 'text-[#E8FF47]' : 'text-[#666666] hover:text-[#F0F0F0]'
+            }`}
+          >
+            EN
+          </button>
+          <span className="text-[#2A2A2A]">|</span>
+          <button
+            onClick={() => setLang('de')}
+            className={`transition-colors duration-200 ${
+              lang === 'de' ? 'text-[#E8FF47]' : 'text-[#666666] hover:text-[#F0F0F0]'
+            }`}
+          >
+            DE
+          </button>
         </div>
       </div>
     </footer>
-  );
-};
-
-export default Footer;
+  )
+}

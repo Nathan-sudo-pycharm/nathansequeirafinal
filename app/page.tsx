@@ -1,29 +1,26 @@
-import Grid from "@/components/Grid";
-import Hero from "@/components/Hero";
-import RecentProject from "@/components/RecentProject";
-import { FloatingNav } from "@/components/ui/FloatingNav";
-import { navItems } from "@/data";
-import { FaHome } from "react-icons/fa";
-import SkillsTab from "@/components/SkillsTab";
-import TechStack from "@/components/TechStack";
-import { Certifications } from "@/components/Certifications";
-import Footer from "@/components/Footer";
-import Experience from "@/components/Experience";
+'use client'
+
+import { useState } from 'react'
+import Navbar from '@/components/Navbar'
+import Hero from '@/components/Hero'
+import Work from '@/components/Work'
+import About from '@/components/About'
+import Experience from '@/components/Experience'
+import Contact from '@/components/Contact'
+import Footer from '@/components/Footer'
 
 export default function Home() {
+  const [lang, setLang] = useState<'en' | 'de'>('en')
+
   return (
-    <main className="relative bg-black-100  flex justify-center flex-col items-center overflow-clip  mz-auto sm:px-10 px-5">
-      <div className="max-w-7xl w-full">
-        <FloatingNav navItems={navItems} />
-        <Hero />
-        <Grid />
-        <RecentProject />
-        <Experience />
-        <SkillsTab />
-        <TechStack />
-        <Certifications />
-        <Footer />
-      </div>
+    <main>
+      <Navbar lang={lang} setLang={setLang} />
+      <Hero lang={lang} />
+      <Work lang={lang} />
+      <About lang={lang} />
+      <Experience lang={lang} />
+      <Contact lang={lang} />
+      <Footer lang={lang} setLang={setLang} />
     </main>
-  );
+  )
 }

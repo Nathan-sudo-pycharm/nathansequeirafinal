@@ -1,207 +1,134 @@
-import { link } from "fs";
+// ============================================
+// NATHAN IVOR SEQUEIRA — PORTFOLIO DATA FILE
+// Edit this file to update all site content
+// ============================================
 
-export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Experience", link: "#experience" },
-  { name: "Skills", link: "#skills" },
-  { name: "Technologies", link: "#techstack" },
-  { name: "Certifications", link: "#certifications" },
-  { name: "Contact", link: "#contact" },
-];
+export type Lang = 'en' | 'de'
 
-export const gridItems = [
-  {
-    id: 1,
-    title: "I prioritize learning new technologies. ",
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/b1.svg",
-    spareImg: "",
-  },
-  {
-    id: 2,
-    title: "Versatile,adaptable,flexible in diverse environments.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 4,
-    title: "AI and backend systems developer",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
-  },
-
-  {
-    id: 5,
-    title: "1+ year in industry. Applying for a Master's in Germany.",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
-  },
-  {
-    id: 6,
-    title: "You can download my resume here.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
-  },
-];
-
+// ── PROJECTS ────────────────────────────────
 export const projects = [
   {
-    id: 4,
-    title: "Hermes",
-    des: "A self-hosted distributed workflow orchestration platform — featuring automatic retry, circuit breaking, and much more",
-    img: "/Hermes.png",
-    iconLists: [
-      "/python.svg",
-      "kafka.svg",
-      "dock.svg",
-      "tailwind.svg",
-      "icons8-next.js.svg",
+    id: '01',
+    name: 'Sorted',
+    description: {
+      en: 'WhatsApp-native order management for home bakers. LLM parses natural-language orders via webhook → FastAPI → Supabase. No app install required for customers.',
+      de: 'WhatsApp-natives Bestellmanagement für Hobbybäcker. Ein LLM verarbeitet natürlichsprachliche Bestellungen per Webhook → FastAPI → Supabase.',
+    },
+    tags: ['FastAPI', 'Supabase', 'LLM', 'WhatsApp API', 'Python'],
+    github: 'https://github.com/Nathan-sudo-pycharm',
+    live: null,
+  },
+  {
+    id: '02',
+    name: 'Doc U Pilot',
+    description: {
+      en: 'RAG document assistant. Upload a PDF, ask questions, get cited answers. Stack: Qdrant, LangChain, Groq.',
+      de: 'RAG-Dokumentenassistent. PDF hochladen, Fragen stellen, zitierte Antworten erhalten. Stack: Qdrant, LangChain, Groq.',
+    },
+    tags: ['LangChain', 'Qdrant', 'Groq', 'RAG', 'FastAPI'],
+    github: 'https://github.com/Nathan-sudo-pycharm/docpilot-rag-groq-qdrant',
+    live: null,
+  },
+  {
+    id: '03',
+    name: 'InfraBoard',
+    description: {
+      en: 'Observability platform with ML-powered anomaly detection. Prometheus + Grafana + Isolation Forest.',
+      de: 'Observability-Plattform mit ML-basierter Anomalieerkennung. Prometheus + Grafana + Isolation Forest.',
+    },
+    tags: ['Prometheus', 'Grafana', 'Python', 'Docker', 'ML'],
+    github: 'https://github.com/Nathan-sudo-pycharm/infraboard-observability',
+    live: null,
+  },
+  {
+    id: '04',
+    name: 'CodeReviewBot',
+    description: {
+      en: 'Async AI code review bot. Reviews GitHub PRs and posts structured feedback via webhooks. Stack: Celery, Redis, NVIDIA NIM.',
+      de: 'Asynchroner KI-Code-Review-Bot. Bewertet GitHub-PRs und postet strukturiertes Feedback per Webhook.',
+    },
+    tags: ['Celery', 'Redis', 'NVIDIA NIM', 'FastAPI', 'GitHub API'],
+    github: 'https://github.com/Nathan-sudo-pycharm/codereviewbot',
+    live: null,
+  },
+  {
+    id: '05',
+    name: 'Hermes',
+    description: {
+      en: 'Distributed messaging service with automatic retry, circuit breaking, and full observability. Stack: Kafka, gRPC, OpenTelemetry.',
+      de: 'Verteilter Messaging-Dienst mit automatischem Retry, Circuit Breaking und vollständiger Observability.',
+    },
+    tags: ['Kafka', 'gRPC', 'OpenTelemetry', 'Docker', 'Python'],
+    github: 'https://github.com/Nathan-sudo-pycharm/hermes',
+    live: null,
+  },
+  {
+    id: '06',
+    name: 'PipelineIQ',
+    description: {
+      en: 'GitHub CI/CD analytics tool for pipeline performance insights. Tracks run times, failure rates, and bottlenecks.',
+      de: 'GitHub-CI/CD-Analysetool für Pipeline-Performance-Einblicke. Verfolgt Laufzeiten, Fehlerquoten und Engpässe.',
+    },
+    tags: ['GitHub Actions', 'FastAPI', 'Next.js', 'PostgreSQL'],
+    github: 'https://github.com/Nathan-sudo-pycharm/pipelineiq',
+    live: null,
+  },
+]
+
+// ── STACK PILLS ─────────────────────────────
+export const stackPills = [
+  'FastAPI', 'Next.js', 'React', 'Python', 'LangChain',
+  'Groq', 'RAG', 'Qdrant', 'Supabase', 'PostgreSQL',
+  'Docker', 'GitHub Actions', 'Redis', 'Celery', 'Kafka',
+  'gRPC', 'OpenTelemetry', 'Prometheus', 'Grafana', 'Tailwind CSS',
+]
+
+// ── EXPERIENCE ──────────────────────────────
+export const experience = {
+  company: 'UnifyCX',
+  role: { en: 'IT Support Engineer', de: 'IT-Support-Ingenieur' },
+  duration: { en: '~17 months', de: 'ca. 17 Monate' },
+  bullets: {
+    en: [
+      'Managed web hosting infrastructure and VPN support for enterprise clients.',
+      'Diagnosed and resolved network and connectivity issues across distributed systems.',
+      'Maintained uptime and supported internal tooling.',
     ],
-    link: "https://github.com/Nathan-sudo-pycharm/hermes",
-    time: "Build Time: approx 15 days",
+    de: [
+      'Verwaltung der Webhosting-Infrastruktur und VPN-Support für Unternehmenskunden.',
+      'Diagnose und Behebung von Netzwerk- und Konnektivitätsproblemen in verteilten Systemen.',
+      'Sicherstellung der Betriebszeit und Unterstützung interner Werkzeuge.',
+    ],
   },
-  {
-    id: 2,
-    title: "Autonomous Navigating Car",
-    des: "Developed an autonomous navigating car using Embedded C, featuring obstacle detection and obstacle avoidance",
-    img: "/roborover.jpg",
-    iconLists: ["/arduino.svg"],
-    link: "https://github.com/Nathan-sudo-pycharm/Arduino_code/blob/main/finalobstacle.ino",
-    time: "Build Time: 4 Months",
-  },
-  {
-    id: 1,
-    title: "SecureIntel DNS Guardian",
-    des: "Built on a 162-record sample dataset; designed for architectural demonstration and pipeline design rather than production-scale detection.",
-    img: "/secureintel.png",
-    iconLists: ["/python.svg", "nvidia-svgrepo-com.svg", "dock.svg"],
-    link: "https://github.com/Nathan-sudo-pycharm/secureintel-dns-guardian",
-    time: "Build Time: 2 weeks",
-  },
-  {
-    id: 3,
-    title: "CodeReviewBot",
-    des: "An AI-powered GitHub bot that automatically reviews Pull Requests and posts structured code feedback using webhooks.",
-    img: "/codereviewbot.png",
-    iconLists: ["/python.svg", "mistral-color.svg", "dock.svg"],
-    link: "https://github.com/Nathan-sudo-pycharm/codereviewbot/tree/main",
-    time: "Build Time: Approx 1 Week",
-  },
-];
+}
 
-export const companies = [
-  {
-    id: 1,
-    name: "PHP",
-    img: "/php.svg",
+// ── ABOUT ───────────────────────────────────
+export const about = {
+  para1: {
+    en: 'I am a backend-first developer who specializes in AI integration and distributed systems. I build production LLM pipelines, async services that scale, and developer tools that respect the people who use them.',
+    de: 'Ich bin ein Backend-orientierter Entwickler mit Spezialisierung auf KI-Integration und verteilte Systeme. Ich entwickle produktionsreife LLM-Pipelines, skalierbare asynchrone Dienste sowie Entwicklerwerkzeuge, die die Menschen respektieren, die sie nutzen.',
   },
-  {
-    id: 2,
-    name: "Python",
-    img: "/python.svg",
+  para2: {
+    en: 'I am currently preparing for a Master\'s program in Germany (WS 2026/27) and am open to remote roles and European opportunities. Based in Mangaluru, India — working with teams worldwide.',
+    de: 'Aktuell bereite ich mich auf ein Masterstudium in Deutschland (WS 2026/27) vor und bin offen für Remote-Positionen und europäische Möglichkeiten. Standort Mangaluru, Indien — Zusammenarbeit mit Teams weltweit.',
   },
-  {
-    id: 3,
-    name: "Tailwind CSS",
-    img: "/tailwind.svg",
-  },
-  {
-    id: 4,
-    name: "Next JS",
-    img: "/next.svg",
-  },
-  {
-    id: 5,
-    name: "Docker",
-    img: "/dock.svg",
-  },
-];
+  stackLabel: { en: 'STACK', de: 'TECHNOLOGIEN' },
+}
 
-export const Skills = [
-  {
-    id: 1,
-    title: "Backend Engineering",
-    desc: "FastAPI (Python), PostgreSQL , JWT Authentication",
-    className: "md:col-span-2",
+// ── CONTACT ─────────────────────────────────
+export const contact = {
+  heading: { en: "Let's build something.", de: 'Lass uns etwas bauen.' },
+  email: 'nathansequeirade@gmail.com',
+  github: 'https://github.com/Nathan-sudo-pycharm',
+  linkedin: 'https://www.linkedin.com/in/nathan-sequeira-941736255/',
+  availability: {
+    en: 'AVAILABLE FOR REMOTE ROLES · FREELANCE · GERMANY RELOCATION',
+    de: 'VERFÜGBAR FÜR REMOTE-POSITIONEN · FREELANCE · UMZUG NACH DEUTSCHLAND',
   },
-  {
-    id: 2,
-    title: "Languages",
-    desc: "Python, JavaScript, SQL, Java, C/C++ (academic), PHP (academic)",
-    className: "md:col-span-2", // change to md:col-span-2
-  },
-  {
-    id: 3,
-    title: "Systems & Infrastructure",
-    desc: "Docker, Docker Compose, Linux, DNS Configuration, cPanel, WHM, VPS Administration",
-    className: "md:col-span-2", // change to md:col-span-2
-  },
-  {
-    id: 4,
-    title: "Languages Spoken",
-    desc: "English (fluent), German (Goethe -A1), Hindi",
-    className: "md:col-span-2", // change to md:col-span-2
-  },
-  {
-    id: 5,
-    title: "Observability & Monitoring",
-    desc: "Prometheus, Grafana, Structured Logging",
-    className: "md:col-span-2", // change to md:col-span-2
-  },
-  {
-    id: 6,
-    title: "Machine Learning & AI",
-    desc: "scikit-learn (Isolation Forest), Sentence Transformers, LangChain, NVIDIA NIM API, OpenAI API, Google Gemini API, RAG Pipelines",
-    className: "md:col-span-2", // change to md:col-span-2
-  },
-  {
-    id: 7,
-    title: "DevOps & Tooling",
-    desc: "GitHub Actions (CI/CD), Git, pytest, Zendesk, Okta",
-    className: "md:col-span-2", // change to md:col-span-2
-  },
-];
+  cvLabel: { en: 'DOWNLOAD CV (PDF)', de: 'LEBENSLAUF HERUNTERLADEN (PDF)' },
+}
 
-export const socialMedia = [
-  {
-    id: 1,
-    img: "/git.svg",
-    link: "https://github.com/Nathan-sudo-pycharm?tab=repositories",
-  },
-
-  {
-    id: 2,
-    img: "/link.svg",
-    link: "https://www.linkedin.com/in/nathan-sequeira-941736255/",
-  },
-];
+// ── FOOTER ──────────────────────────────────
+export const footer = {
+  copy: '© 2026 Nathan Ivor Sequeira',
+}
