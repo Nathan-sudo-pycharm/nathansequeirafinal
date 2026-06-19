@@ -5,6 +5,13 @@
 
 export type Lang = 'en' | 'de'
 
+export type ExperienceEntry = {
+  company: string
+  role: { en: string; de: string }
+  duration: { en: string; de: string }
+  bullets: { en: string[]; de: string[] }
+}
+
 // ── PROJECTS ────────────────────────────────
 export const projects = [
   {
@@ -15,7 +22,7 @@ export const projects = [
       de: 'WhatsApp-natives Bestellmanagement für Hobbybäcker. Ein LLM verarbeitet natürlichsprachliche Bestellungen per Webhook → FastAPI → Supabase.',
     },
     tags: ['FastAPI', 'Supabase', 'LLM', 'WhatsApp API', 'Python'],
-    github: 'https://github.com/Nathan-sudo-pycharm',
+    github: 'https://github.com/Nathan-sudo-pycharm/Sorted',
     live: null,
   },
   {
@@ -84,30 +91,49 @@ export const stackPills = [
 ]
 
 // ── EXPERIENCE ──────────────────────────────
-export const experience = {
-  company: 'UnifyCX',
-  role: { en: 'IT Support Engineer', de: 'IT-Support-Ingenieur' },
-  duration: { en: '~17 months', de: 'ca. 17 Monate' },
-  bullets: {
-    en: [
-      'Managed web hosting infrastructure and VPN support for enterprise clients.',
-      'Diagnosed and resolved network and connectivity issues across distributed systems.',
-      'Maintained uptime and supported internal tooling.',
-    ],
-    de: [
-      'Verwaltung der Webhosting-Infrastruktur und VPN-Support für Unternehmenskunden.',
-      'Diagnose und Behebung von Netzwerk- und Konnektivitätsproblemen in verteilten Systemen.',
-      'Sicherstellung der Betriebszeit und Unterstützung interner Werkzeuge.',
-    ],
+export const experience = [
+  {
+    company: 'UnifyCX',
+    role: { en: 'Junior Associate - Operations (Technical Support)', de: 'Junior Associate - Technischer Support' },
+    duration: { en: 'Mar 2025 – Nov 2025', de: 'März 2025 – Nov. 2025' },
+    bullets: {
+      en: [
+        'Served as designated QA tester: designed test cases, documented failure modes, and validated fixes across VPN infrastructure for PointWild.',
+        'Resolved 40-80 VPN support tickets per shift, diagnosing authentication failures, tunnel configuration errors, and server load imbalances.',
+        'Used Zendesk and Okta for ticket management and identity verification workflows.',
+      ],
+      de: [
+        'Als QA-Tester verantwortlich: Testfälle entworfen, Fehlermodi dokumentiert und Fixes für VPN-Infrastruktur validiert.',
+        'Pro Schicht 40-80 VPN-Support-Tickets bearbeitet, Authentifizierungsfehler und Tunnelkonfigurationsprobleme diagnostiziert.',
+        'Zendesk und Okta für Ticket-Management und Identitätsverifizierung eingesetzt.',
+      ],
+    },
   },
-}
+  {
+    company: 'UnifyCX',
+    role: { en: 'Junior Support Engineer - Bluehost', de: 'Junior Support Engineer - Bluehost' },
+    duration: { en: 'Jul 2024 – Mar 2025', de: 'Jul. 2024 – März 2025' },
+    bullets: {
+      en: [
+        'Diagnosed and resolved DNS propagation failures, SSL certificate errors, and email delivery issues across shared and VPS hosting environments.',
+        'Used Grafana dashboards daily to correlate server-side symptoms with client-reported failures across hosting, DNS, and security layers.',
+        'Operated WHM, cPanel, and Linux-based tools for infrastructure management.',
+      ],
+      de: [
+        'DNS-Propagationsfehler, SSL-Zertifikatsfehler und E-Mail-Probleme in VPS- und Shared-Hosting-Umgebungen diagnostiziert und behoben.',
+        'Grafana-Dashboards täglich genutzt, um serverseitige Symptome mit gemeldeten Fehlern zu korrelieren.',
+        'WHM, cPanel und Linux-Tools für das Infrastrukturmanagement eingesetzt.',
+      ],
+    },
+  },
+]
 
 // ── ABOUT ───────────────────────────────────
 export const about = {
-  para1: {
-    en: 'I am a backend-first developer who specializes in AI integration and distributed systems. I build production LLM pipelines, async services that scale, and developer tools that respect the people who use them.',
-    de: 'Ich bin ein Backend-orientierter Entwickler mit Spezialisierung auf KI-Integration und verteilte Systeme. Ich entwickle produktionsreife LLM-Pipelines, skalierbare asynchrone Dienste sowie Entwicklerwerkzeuge, die die Menschen respektieren, die sie nutzen.',
-  },
+para1: {
+  en: 'I have 1.5 years of professional experience in infrastructure and network operations, and I build AI-integrated backend systems independently - RAG pipelines, distributed messaging, async services. Based in Mangaluru, open to remote roles and relocation to Germany.',
+  de: 'Ich verfüge über 1,5 Jahre Berufserfahrung in Infrastruktur und Netzwerkbetrieb und entwickle eigenständig KI-integrierte Backend-Systeme - RAG-Pipelines, verteiltes Messaging, asynchrone Dienste. Standort Mangaluru, offen für Remote-Stellen und Umzug nach Deutschland.',
+},
   para2: {
     en: 'I am currently preparing for a Master\'s program in Germany (WS 2026/27) and am open to remote roles and European opportunities. Based in Mangaluru, India — working with teams worldwide.',
     de: 'Aktuell bereite ich mich auf ein Masterstudium in Deutschland (WS 2026/27) vor und bin offen für Remote-Positionen und europäische Möglichkeiten. Standort Mangaluru, Indien — Zusammenarbeit mit Teams weltweit.',
