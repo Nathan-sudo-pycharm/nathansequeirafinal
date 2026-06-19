@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Syne, DM_Sans, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
+import GoogleAnalytics from './GoogleAnalytics'
+import { Analytics } from '@vercel/analytics/react'
 
 const syne = Syne({
   subsets: ['latin'],
@@ -49,7 +51,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${syne.variable} ${dmSans.variable} ${jetbrains.variable}`}>
-      <body>{children}</body>
+      <body> <GoogleAnalytics />    <Analytics />
+   {children}</body>
     </html>
   )
 }
